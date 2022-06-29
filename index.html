@@ -910,7 +910,7 @@
     <div
         x-data="{
         activeImage: 1,
-        amountOfImages: 3,
+        amountOfImages: 4,
         loop() {
             setInterval(() => { this.activeImage = this.activeImage === this.amountOfImages ? 1 : this.activeImage + 1 }, 5000)
         },
@@ -932,7 +932,7 @@
             
                 <img
                     class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
-                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ea06e5c4-087d-4931-90e7-bc4429d422bc.jpeg"
+                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/df9f56a5-80e0-4b9c-b4b1-00eb06c90993.png"
                     alt="Painting company Sunshine Painting Company in Vashon Island, WA"
                 />
             
@@ -951,7 +951,7 @@
             
                 <img
                     class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
-                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/a49fdc7f-3e7c-465a-b2b6-8e4546632381.jpeg"
+                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/f2587cd5-8f66-4d4b-9658-70ee7fb8b4bd.png"
                     alt="Painting company Sunshine Painting Company in Vashon Island, WA"
                 />
             
@@ -970,7 +970,26 @@
             
                 <img
                     class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
-                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/78586eee-3b24-4f8b-bdad-bf44842b8cc0.jpeg"
+                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/79299bb2-313c-4354-a7a5-32687ea5811a.png"
+                    alt="Painting company Sunshine Painting Company in Vashon Island, WA"
+                />
+            
+        </div>
+        
+        <div
+            class="absolute inset-0"
+            x-show="activeImage === 4"
+            x-transition:enter="transition duration-1000"
+            x-transition:enter-start="transform translate-x-full"
+            x-transition:enter-end="transform translate-x-0"
+            x-transition:leave="transition duration-1000"
+            x-transition:leave-start="transform"
+            x-transition:leave-end="transform -translate-x-full"
+        >
+            
+                <img
+                    class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
+                    src="https://landing-page-app-hero-images.s3.amazonaws.com/media/3afbe502-3576-4bc9-8bee-a044a97d5b93.png"
                     alt="Painting company Sunshine Painting Company in Vashon Island, WA"
                 />
             
